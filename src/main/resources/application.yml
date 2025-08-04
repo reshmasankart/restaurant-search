@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: restaurant-search
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/restaurantdb
+
+
+server:
+  port: 8082
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+logging:
+  level:
+    org.springdoc: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.data.mongodb: DEBUG
